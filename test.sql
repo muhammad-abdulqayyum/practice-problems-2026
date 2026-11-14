@@ -1,0 +1,22 @@
+-- -- two tables, CUSTOMERS (two columns) id, name
+-- -- ORDERS 5 columns: id, customerId, amount, createdAt, status
+-- -- query returning each customers total spend on completed orders placed in 2026.
+--
+--
+-- SELECT SUM(amount) as total_spend, c.id as customer_id
+-- FROM CUSTOMERS C, ORDERS O
+-- WHERE C.id = O.customerId and
+--       createdAt > '12-31-2025' and
+--       status = 'COMPLETED'
+--
+-- GROUP BY C.id;
+-- -- HAVING SUM(amount);
+--
+-- -- CUSTOMERS table with 2 columns
+-- -- Java App writing to this table.
+-- -- product team wants to rename id column to customerId in table.
+-- -- how do we approach
+--
+-- --
+
+
